@@ -4,7 +4,7 @@ def solution(arr):
     def dfs(N,sx,sy):
         if N ==  1:
             return arr[sx][sy]
-        
+            
         a = dfs(N//2, sx, sy)
         b = dfs(N//2, sx, sy+N//2)
         c = dfs(N//2, sx+N//2, sy)
@@ -25,7 +25,6 @@ def solution(arr):
                 answer[d] += 1
             ## 다른 경우 경우는 -1을 return    
             return -1
-            
     
     ans = dfs(len(arr),0,0)
     if ans != -1:
