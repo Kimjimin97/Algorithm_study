@@ -17,6 +17,5 @@ def solution(s):
         for sss in ss:
             if sss not in answer:
                 answer.append(sss)
-
     
     return answer

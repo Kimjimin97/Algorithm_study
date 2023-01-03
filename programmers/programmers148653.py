@@ -27,5 +27,4 @@ def solution(storey):
             
         i += 1
 
-    
     return answer
