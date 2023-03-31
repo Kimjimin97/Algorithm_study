@@ -3,6 +3,8 @@
 -> keep 이용
 
 tmp_graph만 갱신해주면 된다.
+
+회전 i,j 반대로 잘 되었는지 확인
 """
 
 graph = [
@@ -43,23 +45,6 @@ def rotate():
     for i in range(n):
         for j in range(n):
             graph[i][j] = new_graph[i][j]
-
-
-
-def find_end_row(start_row, col, curr_num):
-    cnt = 0
-
-    for end_row in range(start_row-1,-1,-1):
-        if graph[end_row][col] == 0:
-            continue
-        
-        else:
-            
-            if graph[end_row][col] != curr_num:
-                return end_row + 1, cnt
-            cnt += 1
-    
-    return 0, cnt
 
 
 
