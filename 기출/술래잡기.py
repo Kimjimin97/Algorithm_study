@@ -133,7 +133,7 @@ def move_runner():
         # d = graph[x][y]
         
         nx, ny = x +dxy[d][0], y + dxy[d][1]
-        print("1번이 왜 안움직이나?", idx, nx, ny,"원래좌효",x,y)
+        
         if not in_range(nx, ny):
             d = 3-d
            
@@ -195,11 +195,9 @@ def catch(turn):
         if in_range(nx, ny) and not tree[nx][ny] and graph[nx][ny]:
 
             for num in graph[nx][ny]:
-                print("tunrn",turn)
-                print("잡은 사람은 누군가?", nx, ny,num)
-
+            
                 cnt += 1
-                print(num, runner_list)
+                
                 runner_list[num] = NONE
             
             graph[nx][ny] = []
@@ -212,21 +210,14 @@ def catch(turn):
 
 
 for turn in range(k):
-    print(runner_list)
-    for g in graph:
-        print(g)
-    print()
+
     move_runner()
     
     
 
     move_catcher()
     
-    
-    print(runner_list)
-    for g in graph:
-        print(g)
-    print()
+
     catch(turn+1)
    
 
