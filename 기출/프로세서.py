@@ -98,6 +98,5 @@ for round in range(T):
     flag= False
     dfs(0,0,0)
 
-    # print(min_line_cnt)
 
-    print("#%d %d" %(round, min_line_cnt))
+    print("#%d %d" %(round+1, min_line_cnt))
