@@ -28,3 +28,6 @@ def solution(storey):
         i += 1
 
     return answer
+
+for g in range(1, 61):
+    print(g)
