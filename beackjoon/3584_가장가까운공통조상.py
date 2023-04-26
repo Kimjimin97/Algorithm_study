@@ -5,7 +5,6 @@ graph = []
 first_visited =[]
 
 def dfs(node):
-
     ## 종료 시점
     if len(graph[node]) == 0:
         return
@@ -24,11 +23,6 @@ def dfs(node):
         dfs(parent)
     
 
-
-
-
-
-
 for _ in range(T):
     n = int(input())
     graph = [[] for _ in range(n+1)]
@@ -38,10 +32,15 @@ for _ in range(T):
         graph[b].append(a)
 
     first_visited = [False]*(n+1)
+
     node1, node2 = map(int, input().split())
 
+    ## 초기 노드 문제
     first_visited[node1] = True
     dfs(node1)
-    
-    dfs(node2)
+
+    if first_visited[node2]:
+        print(node2)
+    else:
+        dfs(node2)
     
