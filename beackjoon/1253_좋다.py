@@ -4,6 +4,7 @@ graph = list(map(int, input().split()))
 
 answer = 0
 
+graph.sort()
 
 for num_idx, num in enumerate(graph):
     

@@ -7,6 +7,9 @@
 
 ## 최대 26개의 길 밖에 갈 수 없고, 
 
+import sys
+sys.setrecursionlimit(10**5)
+
 n, m = map(int, input().split())
 
 graph = [
