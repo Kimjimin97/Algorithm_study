@@ -57,6 +57,7 @@ while left <= right:
     
     # 공유기를 너무 많이 설치했으면, 간격을 넓혀야해
     else:
+        answer = max(answer, mid)
         left = mid + 1
     
 
