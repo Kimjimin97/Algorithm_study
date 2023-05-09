@@ -49,5 +49,4 @@ for i in range(len(lists)):
 
         elif now_num > num:
             right -= 1
-
 print(answer)
