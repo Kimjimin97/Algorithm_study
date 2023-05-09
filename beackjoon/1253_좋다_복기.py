@@ -17,12 +17,10 @@
 """
 
 n = int(input())
-
 lists = list(map(int, input().split()))
 
 
 answer = 0
-
 lists.sort()
 
 for i in range(len(lists)):
