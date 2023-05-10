@@ -8,7 +8,7 @@ dp = [0]*n
 
 path = [False]*(1000001)
 count = 1
-
+ㅂ
 
 for i in range(n):
     # path[nums[i]] = True
