@@ -8,12 +8,14 @@
 가장 인접한 두 공유기 사이의 거리를 가능한 크게 설치
 
 """
-n, c = map(int, input().split())
+import sys
+
+n, c = map(int, sys.stdin.readline().split())
 
 dis = []
 
 for _ in range(n):
-    dis.append(int(input()))
+    dis.append(int(sys.stdin.readline()))
 
 left = 0
 right = 1000000000
